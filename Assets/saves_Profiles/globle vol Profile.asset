@@ -56,7 +56,7 @@ MonoBehaviour:
     value: 12.19
   tint:
     overrideState: 1
-    value: 0
+    value: -0.9
   colorFilter:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -76,14 +76,14 @@ MonoBehaviour:
     overrideState: 1
     value: 38
   mixerRedOutRedIn:
-    overrideState: 0
-    value: 100
+    overrideState: 1
+    value: 164
   mixerRedOutGreenIn:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -102
   mixerRedOutBlueIn:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 16
   mixerGreenOutRedIn:
     overrideState: 0
     value: 0
