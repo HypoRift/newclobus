@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - HandTag
+  - Grabbable
+  - walkthrough
   layers:
   - Default
   - TransparentFX
