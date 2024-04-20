@@ -7,26 +7,26 @@ public class FlamethrowerManager : MonoBehaviour
 {
     public ParticleSystem FlameSystem;
     public AudioSource FlameSFX;
-    public bool isGripButtonDown = false;
+    public bool isTriggerButtonDown = false;
 
     void Update()
     {
-        // Check if the grip button is currently down
-        bool isGripDown = EasyInputs.GetGripButtonDown(EasyHand.RightHand);
+        // Check if the trigger button is currently down
+        bool isTriggerDown = EasyInputs.GetTriggerButtonDown(EasyHand.RightHand);
 
-        // Check if the grip button was just pressed
-        if (isGripDown && !isGripButtonDown)
+        // Check if the trigger button was just pressed
+        if (isTriggerDown && !isTriggerButtonDown)
         {
             StartFlame();
         }
-        // Check if the grip button was just released
-        else if (!isGripDown && isGripButtonDown)
+        // Check if the trigger button was just released
+        else if (!isTriggerDown && isTriggerButtonDown)
         {
             StopFlame();
         }
 
-        // Update the state of the grip button
-        isGripButtonDown = isGripDown;
+        // Update the state of the trigger button
+        isTriggerButtonDown = isTriggerDown;
     }
 
     void StartFlame()
